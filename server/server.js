@@ -1,43 +1,55 @@
 const express = require("express");
 const dotenv = require("dotenv");
+const cors = require("cors");
+const helmet = require("helmet");
 const connectDB = require("./config/db");
-const authRoutes = require("./routes/auth");
-const productRoutes = require("./routes/products");
-const orderRoutes = require("./routes/orders");
-const customerRoutes = require("./routes/customers");
-const paymentRoutes = require("./routes/payments");
-const inventoryRoutes = require("./routes/inventory");
+const errorHandler = require("./middleware/errorHandler");
+const requestLogger = require("./middleware/requestLogger");
 const { logger } = require("./utils/logger");
 
+// Load environment variables first
 dotenv.config();
-const app = express();
-
-// Middleware
-app.use(express.json());
 
 // Connect to MongoDB
 connectDB();
 
-// Routes
-app.use("/api/auth", authRoutes);
-app.use("/api/products", productRoutes);
-app.use("/api/orders", orderRoutes);
-app.use("/api/customers", customerRoutes);
-app.use("/api/payments", paymentRoutes);
-app.use("/api/inventory", inventoryRoutes);
+// Initialize Express
+const app = express();
 
-// Error handling middleware
-app.use((err, req, res, next) => {
-  logger.error(`Unhandled error: ${err.stack}`);
-  res.status(500).json({ message: "Something went wrong" });
-});
+// Security Middleware
+app.use(helmet());
+app.use(cors());
+app.use(express.json());
+app.use(requestLogger);
 
-// Root route
+// API Routes
+app.use("/api/auth", require("./routes/auth"));
+app.use("/api/products", require("./routes/products"));
+app.use("/api/orders", require("./routes/orders"));
+app.use("/api/customers", require("./routes/customers"));
+app.use("/api/payments", require("./routes/payments"));
+app.use("/api/inventory", require("./routes/inventory"));
+app.use("/api/reviews", require("./routes/reviews"));
+app.use("/api/webhooks", require("./routes/webhook"));
+
+// Root Route
 app.get("/", (req, res) => {
-  res.send("Poultry E-commerce Backend is running");
+  res.send("🐔 Poultry E-commerce Backend is running 🚀");
 });
+
+// Error Handling Middleware
+app.use(errorHandler);
 
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
-  logger.info(`Server running on port ${PORT}`);
+const server = app.listen(PORT, () => {
+  logger.info(`✅ Server running on port ${PORT}`);
+});
+
+process.on("SIGINT", async () => {
+  logger.warn("🚨 Shutting down server...");
+  await mongoose.connection.close();
+  server.close(() => {
+    logger.info("✅ Server shutdown complete.");
+    process.exit(0);
+  });
 });

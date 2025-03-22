@@ -21,3 +21,40 @@
 {"level":"error","message":"Create product error: Product validation failed: name: Path `name` is required., price: Path `price` is required., category: Path `category` is required.","timestamp":"2025-03-20T16:00:05.739Z"}
 {"level":"info","message":"Product created: Whole Organic Chicken","timestamp":"2025-03-20T16:00:16.955Z"}
 {"level":"error","message":"Unhandled error: SyntaxError: Expected double-quoted property name in JSON at position 43\n    at JSON.parse (<anonymous>)\n    at parse (C:\\Users\\abhin\\OneDrive\\Desktop\\ecommerce-poultry\\server\\node_modules\\body-parser\\lib\\types\\json.js:92:19)\n    at C:\\Users\\abhin\\OneDrive\\Desktop\\ecommerce-poultry\\server\\node_modules\\body-parser\\lib\\read.js:128:18\n    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)\n    at invokeCallback (C:\\Users\\abhin\\OneDrive\\Desktop\\ecommerce-poultry\\server\\node_modules\\raw-body\\index.js:238:16)\n    at done (C:\\Users\\abhin\\OneDrive\\Desktop\\ecommerce-poultry\\server\\node_modules\\raw-body\\index.js:227:7)\n    at IncomingMessage.onEnd (C:\\Users\\abhin\\OneDrive\\Desktop\\ecommerce-poultry\\server\\node_modules\\raw-body\\index.js:287:7)\n    at IncomingMessage.emit (node:events:518:28)\n    at endReadableNT (node:internal/streams/readable:1696:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)","timestamp":"2025-03-20T16:00:38.672Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-03-22T07:48:22.081Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-03-22T07:55:24.451Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-03-22T07:57:41.802Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-03-22T07:59:10.744Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-03-22T08:01:14.512Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-03-22T08:02:01.323Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-03-22T08:02:38.040Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-03-22T08:03:17.686Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-03-22T08:16:01.074Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-03-22T08:18:48.346Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-03-22T09:20:56.776Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-03-22T09:21:03.384Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-03-22T09:21:09.537Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-03-22T09:28:03.187Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-03-22T09:40:06.809Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-03-22T09:40:48.560Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-03-22T09:42:08.772Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-03-22T09:42:13.464Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-03-22T09:42:26.834Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-03-22T09:42:31.417Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-03-22T09:42:42.106Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-03-22T09:42:46.861Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-03-22T09:42:48.236Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-03-22T09:43:05.290Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-03-22T09:43:10.460Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-03-22T09:44:55.498Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-03-22T09:45:00.230Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-03-22T09:45:13.959Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-03-22T09:45:17.966Z"}
+{"level":"info","message":"✅ Server running on port 5000","timestamp":"2025-03-22T09:48:04.291Z"}
+{"level":"info","message":"✅ Server running on port 5000","timestamp":"2025-03-22T09:48:19.372Z"}
+{"level":"info","message":"GET / - ::1","timestamp":"2025-03-22T09:48:42.412Z"}
+{"level":"info","message":"✅ Server running on port 5000","timestamp":"2025-03-22T09:48:47.736Z"}
+{"level":"info","message":"✅ Server running on port 5000","timestamp":"2025-03-22T09:49:01.533Z"}
+{"level":"info","message":"✅ Server running on port 5000","timestamp":"2025-03-22T09:49:24.058Z"}
+{"level":"info","message":"✅ Server running on port 5000","timestamp":"2025-03-22T11:26:54.117Z"}
+{"level":"info","message":"✅ Server running on port 5000","timestamp":"2025-03-22T11:27:15.661Z"}
